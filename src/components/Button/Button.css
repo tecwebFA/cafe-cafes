@@ -1,0 +1,35 @@
+.buttonCount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.counter {
+  display: flex;
+  flex-direction: row;
+}
+
+.counter p {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.counter .increment {
+  width: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+}
+
+.counter .decrement {
+  width: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+}
+
+.buttonCount .confirm {
+  grid-area: bc;
+  width: 10rem;
+  background-color: #cbbdad;
+  border: none;
+  border-radius: 0.2rem;
+  text-transform: uppercase;
+}

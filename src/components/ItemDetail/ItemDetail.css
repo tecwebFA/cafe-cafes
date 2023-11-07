@@ -1,0 +1,72 @@
+.itemDetailContainer {
+  display: grid;
+  grid-template-areas: "img itemd";
+  background-color: #f0eeeb;
+  margin: 5rem;
+  padding: 2rem;
+}
+.itemDetail {
+  display: grid;
+  grid-template-areas: "h5" "pd" "pv" "pw" "p" "button";
+  justify-items: center;
+}
+.itemDetailContainer .itemDetail {
+  grid-area: itemd;
+}
+.itemDetailContainer img {
+  width: 20rem;
+  grid-area: img;
+}
+.itemDetail h5 {
+  font-size: 2rem;
+  grid-area: h5;
+  color: #4f391f;
+  letter-spacing: 0.2rem;
+  margin-top: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+.itemDetail .description {
+  grid-area: pd;
+  color: #91724e;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+.itemDetail .variety {
+  grid-area: pv;
+  color: #91724e;
+}
+.itemDetail .weight {
+  grid-area: pw;
+  color: #91724e;
+}
+.itemDetail .price {
+  grid-area: p;
+  color: black;
+  font-weight: bold;
+  margin: 2rem;
+}
+.itemDetail .buttonCount {
+  grid-area: button;
+}
+@media (max-width: 420px) {
+  .itemDetailContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .itemDetailContainer img {
+    width: 10rem;
+  }
+}
+.back{
+  text-decoration: none;
+  color:#4f391f;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  text-transform: uppercase;
+}
+.back:hover{
+  color:black;
+}
