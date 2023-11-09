@@ -83,7 +83,7 @@ return(
 </ul>
     <p>Total da Compra: R$ {totalPrice()}</p>
     </div>}
-    <div className='containerForm; col-xs-6'>
+    <div className='containerForm'>
     <form autoComplete='off' className='form-group' onSubmit={cashout}>
         <label htmlFor='name'>Nome: </label>
         <input type="text" className='form-control' required  onChange={(e)=>setName(e.target.value)} value={name}/>
